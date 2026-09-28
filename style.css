@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #f8e8ff, #80adec);
+}
+
+.quote-container {
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+
+    padding: 45px 35px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #8a4fff;
+
+    margin-bottom: 25px;
+}
+
+.quote-box {
+    position: relative;
+
+    padding: 20px;
+}
+
+.quote-icon {
+    font-size: 70px;
+    line-height: 40px;
+
+    color: #8a4fff;
+}
+
+#quote {
+    font-size: 28px;
+    line-height: 1.5;
+
+    color: #222;
+
+    margin: 15px 0;
+}
+
+#author {
+    font-size: 16px;
+    font-style: italic;
+
+    color: #777;
+
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+    padding: 13px 22px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#newQuoteBtn {
+    background: #8a4fff;
+    color: white;
+}
+
+#copyBtn {
+    background: #eeeeee;
+    color: #333;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#message {
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    color: #8a4fff;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .quote-container {
+        padding: 35px 20px;
+    }
+
+    #quote {
+        font-size: 22px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
